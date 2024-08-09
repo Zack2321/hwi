@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .bg-img1, .bg-img2, .bg-img3, .bg-img4 {
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+      }
+
+      .bg-img1 {
+        background-image: url("dark_cloud.gif");
+      }
+
+      .bg-img2 {
+        background-image: url("before rain.gif");
+      }
+
+      .bg-img3 {
+        background-image: url("windy.gif");
+      }
+
+      .bg-img4 {
+        background-image: url("raining.gif");
+      }
+
+      .text {
+        padding-top: 200px;
+        padding-left: 170px;
+        z-index: 1;
+      }
+
+   
+
+  
+
+      .nav-link {
+        padding: 5px 8px; 
+        margin: 2px; 
+        text-decoration: none;
+        color: black;
+        border-radius: 5px;
+      }
+
+      .nav-link:hover {
+        background-color: #ddd;
+      }
+
+      .social-icons a {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .social-icons a:hover {
+        background-color: #555;
+      }
+
+      .carousel-indicators [data-bs-target] {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid black;
+      }
+
+      .carousel-indicators .active {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="flex-container d-flex justify-content-between align-items-center p-3">
+      <img src="logo.png" alt="Logo" style="width: 100px;">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+        </li>
+      </ul>
+     
+    </nav>
+    <div id="carousel-main" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-img1">
+        </div>
+        <div class="carousel-item bg-img2">
+        </div>
+        <div class="carousel-item bg-img3">
+        </div>
+        <div class="carousel-item bg-img4">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Prev</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
